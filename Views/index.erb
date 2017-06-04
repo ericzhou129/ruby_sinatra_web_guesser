@@ -1,26 +1,41 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <style>
-        .high {
-            background-color: red;
-        }
-        .low {
-            background-color: blue;
-        }
-        .correct {
-            background-color: green;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>Eric Zhou - Guess the number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--TODO: need to add SEO tags description and keywords-->
+    <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class=<%= style %>>
-    <p>
-        <h1>Guess the secret number!</h1>
-        <h2><%= message %></h2> 
-    </p>
-    <form>
-        <input type="text" name="guess" />
-        <input type="submit" value="Guess!" /> 
-    </form>
+
+<body id=<%= style %>>
+    <div class="container">
+        <div class="row text-center">
+            
+            <div class="col-md-12">
+                <h1>Guess The Secret Number</h1>
+            </div>
+
+            <div class="col-md-12">
+                <h2><%= message %></h2> 
+            </div>
+
+            <div class="col-md-12">
+                <h3>you have <%= num_guess %> guesses left</h3>
+            </div>
+
+            <div class="col=md=12">
+                <form>
+                    <input type="text" name="guess" />
+                    <input type="submit" value="Guess!" /> 
+                </form>
+            </div>
+
+        </div>
+    </div>  
 </body>
+
 </html>
