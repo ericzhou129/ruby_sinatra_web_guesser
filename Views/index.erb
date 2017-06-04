@@ -1,10 +1,21 @@
 <!DOCTYPE>
 <html>
 <head>
+    <style>
+        .high {
+            background-color: red;
+        }
+        .low {
+            background-color: blue;
+        }
+        .correct {
+            background-color: green;
+        }
+    </style>
 </head>
-<body>
+<body class=<%= style %>>
     <p>
-        <h1>The secret number is <%= num %></h1>
+        <h1>Guess the secret number!</h1>
         <h2><%= message %></h2> 
     </p>
     <form>
